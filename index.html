@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>page title</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+    
+        <div class="nav">
+            <div class="left-side">
+                <div class="nav-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="brand">
+                    <div> ASHWIN KUMAR. A</div>
+                <div>Front-End Developer</div>
+                </div>
+            </div>
+         </div>
+         </header>
+         <main>
+
+         <div class="content-wrapper">
+             <div class="portfolio-items-wrapper">
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(images/1.jpg)"></div>
+
+                    <div class="img-text-wrapper">
+                        
+                        <div class="subtitle">
+                            <a href="https://www.google.com/"> SIMPLE VALIDATION</a>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <div class="portfolio-item-wrapper">
+                    
+                        <div class="portfolio-img-background" style="background-image: url(images/2.jpg)"></div>
+    
+                        <div class="img-text-wrapper">
+                            
+                            <div class="subtitle">
+                                <a href="https://www.google.com/"> LANDING PAGE </a>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="portfolio-item-wrapper">
+                            <div class="portfolio-img-background" style="background-image: url(images/3.jpg)"></div>
+        
+                            <div class="img-text-wrapper">
+                                
+                                    
+                                
+                                <div class="subtitle">
+                                    <a href="https://www.google.com/">REACT BLOG </a>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="portfolio-item-wrapper">
+                                <div class="portfolio-img-background" style="background-image: url(images/4.jpg)"></div>
+            
+                                <div class="img-text-wrapper">
+                                    
+                                        
+                                   
+                                    <div class="subtitle">
+                                        <a href="https://www.google.com/"> COMING SOON</a>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="portfolio-item-wrapper">
+                                    <div class="portfolio-img-background" style="background-image: url(images/5.jpg)"></div>
+                
+                                    <div class="img-text-wrapper">
+                                        
+                                            
+                                        
+                                        <div class="subtitle">
+                                            <a href="https://www.google.com/"> COMING SOON</a>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="portfolio-item-wrapper">
+                                        
+                                        <div class="portfolio-img-background"   style="background-image: url(images/6.jpg)"></div>
+                    
+                                        <div class="img-text-wrapper">
+                                            
+                                                
+                                            
+                                            <div class="subtitle">
+                                                <a href="https://www.google.com/"> COMING SOON ></a>
+                                            </div>
+                                            
+                                        </div>
+                                        </div>
+                                        
+                                        
+
+             </div>
+            
+         </div>
+         
+ 
+ 
+</main>
+
+<div>
+    <footer id="main-footer">
+        Copyright & Developed@Ashwin Kumar
+      </footer>
+</div>
+
+</body>
+
+<script>  
+const portfolioitems = document.querySelectorAll(".portfolio-item-wrapper")
+
+portfolioitems.forEach(portfolioItem => {
+    portfolioItem.addEventListener('mouseover',() => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.add('img-darken');
+    })
+    portfolioItem.addEventListener('mouseout',() => {
+        console.log(portfolioItem.childNodes[1].classList);
+        portfolioItem.childNodes[1].classList.remove('img-darken');
+    })
+})
+
+
+</script>
+</html>
